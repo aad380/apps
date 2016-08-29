@@ -18,3 +18,10 @@ jar {
         attributes 'Main-Class': 'org.cs.snake.Snake'
     }
 }
+
+task runJar(dependsOn:jar) << {
+  javaexec { 
+    main="-jar";
+    args = ["build/libs/${rootProject.name}-${version}.jar"]
+  } 
+}
