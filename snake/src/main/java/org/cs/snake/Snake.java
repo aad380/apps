@@ -18,12 +18,6 @@ public class Snake extends Applet {
 		aboutTextArea.setEditable (false);
 		(new LoadInfo (aboutTextArea, infoFile, null)).start ();
 		Frame	f = new Frame ("Snake");
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
 		Cell.initCells (imagesPath, f, null);
 		manager = new SnakeGame (aboutTextArea);
 		f.setLayout (new CardLayout ());
