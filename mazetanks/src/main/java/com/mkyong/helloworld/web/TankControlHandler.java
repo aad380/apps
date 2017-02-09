@@ -104,7 +104,7 @@ class TankRunner implements Runnable {
 
     @Override
     public void run () {
-        while(Thread.currentThread().isInterrupted()) {
+        while(!Thread.currentThread().isInterrupted()) {
             clients.forEach((String id, TankClient tankClient) -> {
                 if (tankClient.isAutorun()) {
                     try {
