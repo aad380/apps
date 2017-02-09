@@ -114,7 +114,7 @@ class TankRunner implements Runnable {
                     }
                 }
             });
-            try {Thread.sleep(500L);} catch (InterruptedException ex) {
+            try {Thread.sleep(100L);} catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
             }
         }

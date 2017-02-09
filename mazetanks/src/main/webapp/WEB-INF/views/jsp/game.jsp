@@ -8,7 +8,7 @@
         <spring:url value="resources/game" var="RESOURCES" />
         <link href="${RESOURCES}/css/main.css" rel="stylesheet" type="text/css" />
         <script src="${RESOURCES}/js/jquery-1.5.2.min.js"></script>
-        <!--script src="${RESOURCES}/js/script.js"></script-->
+        <script src="${RESOURCES}/js/script.js"></script>
         <script src="${RESOURCES}/js/websocket.js"></script>
     </head>
     <body>        

@@ -24,7 +24,7 @@ socket.onerror = function(error) {
 
 
 function sendMessage (message) {
-    socket.send();
+    socket.send(message);
 }
 
 
