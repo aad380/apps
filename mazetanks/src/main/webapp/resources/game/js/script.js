@@ -192,6 +192,7 @@ $(function(){
                break;
             case 39: // Right key
                sendMessage("RIGHT");
+               break;
             case 32: // Space
                sendMessage("AUTORUN");
                break;

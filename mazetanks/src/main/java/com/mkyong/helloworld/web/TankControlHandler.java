@@ -44,13 +44,12 @@ public class TankControlHandler extends TextWebSocketHandler {
         }
         TankClient.Direction direction;
         try {
-             direction = TankClient.Direction.valueOf(cmd);
+            direction = TankClient.Direction.valueOf(cmd);
+            tankClient.setDirection(direction);
         } catch (Exception ex) {
-            logger.error ("handleTextMessage: incorrect command="+cmd);
+            logger.error ("handleTextMessage: incorrect command="+cmd );
             return;
         }
-        tankClient.setDirection(direction);
-        tankClient.setAutorun(false);
         try {
             session.sendMessage(new TextMessage(direction.name()));
         } catch (IOException ex) {
