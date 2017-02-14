@@ -1,5 +1,8 @@
-package com.mkyong.helloworld.web;
+package org.cs.mazetanks.web;
 
+//import org.eclipse.jetty.websocket.api.WebSocketBehavior;
+//import org.eclipse.jetty.websocket.api.WebSocketPolicy;
+//import org.eclipse.jetty.websocket.server.WebSocketServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.WebSocketHandler;
@@ -7,10 +10,9 @@ import org.springframework.web.socket.config.annotation.EnableWebSocket;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;
 import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry;
 import org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator;
+//import org.springframework.web.socket.server.jetty.JettyRequestUpgradeStrategy;
 import org.springframework.web.socket.server.standard.ServletServerContainerFactoryBean;
 import org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor;
-
-import java.util.concurrent.Callable;
 
 /**
  * Created by aad on 06.02.2017.
@@ -47,6 +49,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
         container.setMaxSessionIdleTimeout(600_000);
         return container;
     }
+
 
     /*
     // for jetty
