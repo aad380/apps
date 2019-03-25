@@ -1,7 +1,7 @@
 plugins {
   id 'java'
   id 'war'
-  id 'org.akhikhl.gretty' version '1.4.0'
+  id "org.akhikhl.gretty" version "2.0.0"
   //id 'eclipse-wtp' apply false
 }
 
@@ -17,11 +17,11 @@ repositories {
 dependencies {
  
 	compile 'ch.qos.logback:logback-classic:1.1.5'
-	compile 'org.springframework:spring-webmvc:4.3.6.RELEASE'
-	compile 'org.springframework:spring-websocket:4.3.6.RELEASE'
+	compile 'org.springframework:spring-webmvc:5.1.5.RELEASE'
+	compile 'org.springframework:spring-websocket:5.1.5.RELEASE'
 	compile 'javax.servlet:jstl:1.2'
 	compile 'javax.websocket:javax.websocket-api:1.1'
-        compile 'org.projectlombok:lombok:1.16.12'
+        compile 'org.projectlombok:lombok:1.18.6'
 
 	//compile 'org.eclipse.jetty.websocket:javax-websocket-client-impl:9.2.7.v20150116'
 	//compile 'org.eclipse.jetty.websocket:javax-websocket-server-impl:9.2.7.v20150116'
